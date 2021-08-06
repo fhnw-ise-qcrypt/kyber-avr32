@@ -8,6 +8,17 @@ This repository contains the official reference implementation of the [Kyber](ht
 
 The implementations contain several test and benchmarking programs and a Makefile to facilitate compilation.
 
+### Build for AVR32 Microcontroller
+
+Download the toolchain from the [Microchip archive](https://www.microchip.com/en-us/development-tools-tools-and-software/avr-and-sam-downloads-archive)
+Latest Version is 3.4.1 with C99 standard.
+
+```bash
+mkdir build && cd build
+cmake ..
+cmake --build .
+```
+
 ### Prerequisites
 
 Some of the test programs require [OpenSSL](https://openssl.org). If the OpenSSL header files and/or shared libraries do not lie in one of the standard locations on your system, it is necessary to specify their location via compiler and linker flags in the environment variables `CFLAGS`, `NISTFLAGS`, and `LDFLAGS`.

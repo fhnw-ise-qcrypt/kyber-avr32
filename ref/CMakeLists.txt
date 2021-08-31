@@ -9,6 +9,13 @@ set(TEST_KEX_SRCS test_kex.c randombytes.c)
 set(TEST_VECTORS_SRCS test_vectors.c)
 set(TEST_SPEED_SRCS test_speed.c speed_print.c cpucycles.c randombytes.c)
 
+set(SHELL_KYBER_INIT_SRC kex-init.c randombytes.c)
+set(SHELL_KYBER_DELETE_SRC kex-del.c)
+set(SHELL_KYBER_PUB_SRC kex-pub.c randombytes.c)
+set(SHELL_KYBER_KEY_SRC kex-key.c)
+set(SHELL_KYBER_FULL_SRC kex-full.c randombytes.c)
+set(SHELL_KEX_HELPER_SRCS kex-helper.c)
+
 if(MSVC)
   add_compile_options(/nologo /O2 /W4 /wd4146 /wd4244)
 else()
@@ -41,6 +48,20 @@ target_link_libraries(test_vectors512_ref kyber512_ref)
 target_link_libraries(test_kyber512-90s_ref kyber512_90s_ref)
 target_link_libraries(test_kex512-90s_ref kyber512_90s_ref)
 target_link_libraries(test_vectors512-90s_ref kyber512_90s_ref)
+
+add_library(kex-helper ${SHELL_KEX_HELPER_SRCS})
+
+add_executable(kex-init ${SHELL_KYBER_INIT_SRC})
+target_link_libraries(kex-init kyber512_ref kex-helper)
+add_executable(kex-del ${SHELL_KYBER_DELETE_SRC})
+target_link_libraries(kex-del kyber512_ref kex-helper)
+add_executable(kex-pub ${SHELL_KYBER_PUB_SRC})
+target_link_libraries(kex-pub kyber512_ref kex-helper)
+add_executable(kex-key ${SHELL_KYBER_KEY_SRC})
+target_link_libraries(kex-key kyber512_ref kex-helper)
+add_executable(kex-full ${SHELL_KYBER_FULL_SRC})
+target_link_libraries(kex-full kyber512_ref kex-helper)
+
 
 # Kyber 768
 add_library(kyber768_ref ${KYBER_FIPS202_SRCS})

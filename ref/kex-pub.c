@@ -112,7 +112,7 @@ int main( int argc, char *argv[] )
 
     //printHexString("Send to other party: ", ake_sendb, KEX_AKE_SENDBBYTES);
     printf("Send \"ake_sendb.txt\" to other party.\n");
-    printHexString("Common secret: ", ka, KEX_SSBYTES);
+    printHexString("Shared secret: ", ka, KEX_SSBYTES);
 
     // save common key
     writeHexFile("./COMMON.key", ka, KEX_SSBYTES);
@@ -151,7 +151,7 @@ int main( int argc, char *argv[] )
       kex_ake_sharedA(ka, ake_sendb, tk, eska, ska); // Run by Alice
       // kex_ake_sharedA(ka, ake_sendb, tk, eska, ska);
 
-      printHexString("Common secret: ", ka, KEX_SSBYTES);
+      printHexString("Shared secret: ", ka, KEX_SSBYTES);
 
       // save common key
       writeHexFile("./COMMON.key", ka, KEX_SSBYTES);

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkex-helper.a  CMakeFiles/kex-helper.dir/kex-helper.c.o
+/usr/bin/ranlib libkex-helper.a

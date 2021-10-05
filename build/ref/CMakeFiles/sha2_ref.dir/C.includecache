@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/sha2.h
+stddef.h
+-
+stdint.h
+-
+
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/sha256.c
+stddef.h
+-
+stdint.h
+-
+sha2.h
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/sha2.h
+
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/sha512.c
+stddef.h
+-
+stdint.h
+-
+sha2.h
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/sha2.h
+

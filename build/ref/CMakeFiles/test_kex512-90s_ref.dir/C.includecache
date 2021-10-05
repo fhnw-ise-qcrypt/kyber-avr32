@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/kem.h
+stdint.h
+-
+params.h
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/params.h
+
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/kex.h
+stdint.h
+-
+params.h
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/params.h
+
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/params.h
+
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/test_kex.c
+stdint.h
+-
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+kem.h
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/kem.h
+kex.h
+/mnt/c/Users/simon/Downloads/QSIT/kyber_GroundStation/kyber-avr32/ref/kex.h
+

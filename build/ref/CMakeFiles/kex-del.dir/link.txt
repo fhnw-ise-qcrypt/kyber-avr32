@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/kex-del.dir/kex-del.c.o  -o kex-del  libkyber768_ref.a libkex-helper.a libfips202_ref.a 

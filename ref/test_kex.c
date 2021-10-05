@@ -35,6 +35,12 @@ int main(void)
   for(i=0;i<KEX_SSBYTES;i++)
     zero[i] = 0;
 
+  printf("KEX_SSBYTES: %d (%d)\n", KEX_SSBYTES, KEX_SSBYTES*2);
+  printf("KEX_AKE_SENDABYTES: %d (%d)\n", KEX_AKE_SENDABYTES, KEX_AKE_SENDABYTES*2);
+  printf("KEX_AKE_SENDBBYTES: %d (%d)\n", KEX_AKE_SENDBBYTES, KEX_AKE_SENDBBYTES*2);
+  printf("CRYPTO_SECRETKEYBYTES: %d (%d)\n", CRYPTO_SECRETKEYBYTES, CRYPTO_SECRETKEYBYTES*2);
+  printf("CRYPTO_PUBLICKEYBYTES: %d (%d)\n", CRYPTO_PUBLICKEYBYTES, CRYPTO_PUBLICKEYBYTES*2);
+
   crypto_kem_keypair(pkb, skb); // Generate static key for Bob
 
   crypto_kem_keypair(pka, ska); // Generate static key for Alice

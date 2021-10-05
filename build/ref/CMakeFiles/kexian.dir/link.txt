@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/kexian.dir/kexian.c.o CMakeFiles/kexian.dir/randombytes.c.o  -o kexian  libkyber768_ref.a libkex-helper.a libfips202_ref.a 

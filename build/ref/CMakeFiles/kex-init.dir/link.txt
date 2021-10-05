@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/kex-init.dir/kex-init.c.o CMakeFiles/kex-init.dir/randombytes.c.o  -o kex-init  libkyber768_ref.a libkex-helper.a libfips202_ref.a 

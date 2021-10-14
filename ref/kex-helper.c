@@ -71,7 +71,7 @@ int readHexFile(char *filename, uint8_t *out, size_t bytes){
       out[i] = (uint8_t)strtol(tmp,NULL,16);
     }
     fclose(fp);
-    printf("[ ok  ] read %d / %d bytes from %s\n", (int)len/2, (int)CRYPTO_SECRETKEYBYTES, filename);
+    printf("[ ok  ] read %d / %d bytes from %s\n", (int)len/2, (int)bytes, filename);
   } else {
     fclose(fp);
     fprintf(stderr, "[error] file: %s does not exist\n", filename);

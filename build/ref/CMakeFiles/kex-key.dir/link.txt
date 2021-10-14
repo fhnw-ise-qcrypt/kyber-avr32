@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/kex-key.dir/kex-key.c.o  -o kex-key  libkyber768_ref.a libkex-helper.a libfips202_ref.a 

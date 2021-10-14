@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/kex-pub.dir/kex-pub.c.o CMakeFiles/kex-pub.dir/randombytes.c.o  -o kex-pub  libkyber768_ref.a libkex-helper.a libfips202_ref.a 

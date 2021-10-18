@@ -55,6 +55,8 @@ void randombytes(uint8_t *out, size_t outlen) {
 }
 #else
 void randombytes(uint8_t *out, size_t outlen) {
+
+  /*
   static int fd = -1;
   ssize_t ret;
 
@@ -75,6 +77,12 @@ void randombytes(uint8_t *out, size_t outlen) {
 
     out += ret;
     outlen -= ret;
+  }
+  */
+  while(outlen > 0) {
+    *out = (uint8_t)rand();
+    out++;
+    outlen--;
   }
 }
 #endif
